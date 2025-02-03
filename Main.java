@@ -4,23 +4,31 @@ public class Main
 {
   public static void main(String[] args)
   {
-    // Problem 1
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Enter array length");
-    int len = sc.nextInt();
-
-    int[] arr = new int[len];
-    System.out.println("Enter values");
-    for (int i = 0; i < len; i++)
-    {
-      arr[i] = sc.nextInt();
-    }
-    System.out.println("Contains negative: " + containsNeg(arr));
+    // Create some arrays here to test your methods
+    
   }
 
-  public static boolean containsNeg(int[] array)
+  public static int countLength(String[] arr, int targetLength)
   {
-    // Implement Problem 1 here
+    // replace with your code
     return 0;
+  }
+
+  public static int indexOf(double[] arr, double target)
+  {
+    // replace with your code
+    return -1;
+  }
+
+  public static boolean hasDuplicates(int[] arr)
+  {
+    // replace with your code
+    return false;
+  }
+
+  public static String findMode(String[] arr)
+  {
+    // replace with your code
+    return null;
   }
 }
