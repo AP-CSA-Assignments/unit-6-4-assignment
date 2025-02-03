@@ -1,4 +1,4 @@
-# unit-6-2-assignment
+# unit-6-4-assignment
 
 ## Git Config
 ```
@@ -22,80 +22,26 @@ After you compile the shape classes, you only need to compile and run `Main.java
 
 # Instructions  
 
-Within the `Main` class, create the following methods (remember that they must be static in order to be used with `main`).
-
-## Problem 1
-Write a method called `containsNeg` that takes in an array of doubles as parameter, and returns true if the array contains a negative element, and false otherwise.  Test your method in `main`.
-
+## countLength
+Write the `countLength` method, that takes in an array of `Strings`, and a target length (> 0), and returns the number of elements whose length is equal to the target length.
 ```
-Enter array length:
-4
-Enter values:
-1.1
-2.2
-3.3
--4.4
-Contains negative: true
-
-Enter array length:
-3
-Enter values:
-1.1
-2.2
-3.3
-Contains negative: false
+public static int countLength(String[] arr, int targetLength)
 ```
 
-## Problem 2
-Write a method called `numDivisibleBy3` which takes an array of integers as parameter, and returns the number of elements that are divisible by 3.
-
+## indexOf
+Implement your own version of `indexOf` for an array of `double` values.  The method should return the index of the first occurrence of the `target` in the array, and should return -1, if the target cannot be found.
 ```
-Enter array length:
-5
-Enter values:
-3
-6
-3
-1
-2
-Number divisible by three: 3
-
-Enter array length:
-5
-Enter values:
-1
-2
-4
-5
-7
-Number divisible by three: 0
+public static int indexOf(double[] arr, double target)
 ```
+## hasDuplicates
+Write the method `hasDuplicates`, that takes in an array of `int` values, and returns `true` if there is at least one repeated element, and `false` if the entire array contains only unique elements.
 
-## Problem 3
-Write a method called `numDivisible` which takes in an array of integers and a number, `num`, as parameters.  The method should return the number of elements in the array that are divisible by `num`.
-
+Use a combination of the algorithms we saw previously.
 ```
-Enter a value for num:
-2
-Enter array length:
-5
-Enter values:
-1
-2
-3
-4
-5
-Num divisible by 2: 2
-
-Enter a value for num:
-3
-Enter array length:
-5
-Enter values:
-1
-2
-3
-4
-5
-Num divisible by 3: 1
+public static boolean hasDuplicates(int[] arr)
+```
+## findMode
+Write the method `findMode`, that takes in an array of `Strings`, and returns the element that appears the most often in the array.  If there are multiple modes, then only return one of them.
+```
+public static String findMode(String[] arr)
 ```
